@@ -90,7 +90,7 @@ def format_prompt_list(prompts: Iterable[str]) -> str:
     :param prompts: The prompts.
     :return: The prompts formatted as a numbered list.
     """
-    return f"{'\n\n'.join(f'{i + 1}. {prompt}' for i, prompt in enumerate(prompts))}"
+    return '\n\n'.join(f'{i + 1}. {prompt}' for i, prompt in enumerate(prompts))
 
 
 def format_agenda(
